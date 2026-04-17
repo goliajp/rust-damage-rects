@@ -14,3 +14,10 @@ documentation = "https://docs.rs/damage-rects"
 publish = false
 
 [dependencies]
+
+[dev-dependencies]
+winit = "0.30"
+softbuffer = "0.4"
+
+[[example]]
+name = "visualize"
