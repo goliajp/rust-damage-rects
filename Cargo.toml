@@ -1,0 +1,16 @@
+[package]
+name = "damage-rects"
+version = "0.1.0"
+description = "Accumulate, coalesce, and emit dirty rectangles for partial GPU redraw"
+keywords = ["damage", "dirty", "rect", "redraw", "gpu"]
+categories = ["graphics", "gui", "rendering"]
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+repository.workspace = true
+homepage.workspace = true
+authors.workspace = true
+documentation = "https://docs.rs/damage-rects"
+publish = false
+
+[dependencies]
