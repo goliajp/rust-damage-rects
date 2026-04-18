@@ -66,7 +66,12 @@ impl DamageRect {
     #[inline]
     #[must_use]
     pub const fn new(x: f32, y: f32, width: f32, height: f32) -> Self {
-        Self { x, y, width, height }
+        Self {
+            x,
+            y,
+            width,
+            height,
+        }
     }
 
     /// Right edge (`x + width`).
@@ -156,7 +161,10 @@ impl DamageTracker {
     #[inline]
     #[must_use]
     pub const fn new() -> Self {
-        Self { rects: Vec::new(), full: false }
+        Self {
+            rects: Vec::new(),
+            full: false,
+        }
     }
 
     /// New tracker pre-flagged for full-viewport damage. Useful on
@@ -164,7 +172,10 @@ impl DamageTracker {
     #[inline]
     #[must_use]
     pub const fn with_full_damage() -> Self {
-        Self { rects: Vec::new(), full: true }
+        Self {
+            rects: Vec::new(),
+            full: true,
+        }
     }
 
     /// Add a dirty rectangle. Ignored if the full-damage flag is set.

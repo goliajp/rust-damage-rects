@@ -75,8 +75,12 @@ impl ApplicationHandler for App {
 
             WindowEvent::Resized(size) => {
                 if let Some(surface) = &mut self.surface {
-                    let Some(w) = NonZeroU32::new(size.width) else { return };
-                    let Some(h) = NonZeroU32::new(size.height) else { return };
+                    let Some(w) = NonZeroU32::new(size.width) else {
+                        return;
+                    };
+                    let Some(h) = NonZeroU32::new(size.height) else {
+                        return;
+                    };
                     surface.resize(w, h).expect("softbuffer resize");
                 }
                 self.request_redraw();
@@ -86,7 +90,11 @@ impl ApplicationHandler for App {
                 self.cursor = (position.x, position.y);
             }
 
-            WindowEvent::MouseInput { state: ElementState::Pressed, button: MouseButton::Left, .. } => {
+            WindowEvent::MouseInput {
+                state: ElementState::Pressed,
+                button: MouseButton::Left,
+                ..
+            } => {
                 let (cx, cy) = self.cursor;
                 let rect = DamageRect::new(
                     cx as f32 - ADD_W * 0.5,
@@ -100,7 +108,12 @@ impl ApplicationHandler for App {
             }
 
             WindowEvent::KeyboardInput {
-                event: KeyEvent { logical_key, state: ElementState::Pressed, .. },
+                event:
+                    KeyEvent {
+                        logical_key,
+                        state: ElementState::Pressed,
+                        ..
+                    },
                 ..
             } => {
                 let handled = match &logical_key {
@@ -165,8 +178,12 @@ impl App {
             return;
         };
         let size = window.inner_size();
-        let Some(w_nz) = NonZeroU32::new(size.width) else { return };
-        let Some(h_nz) = NonZeroU32::new(size.height) else { return };
+        let Some(w_nz) = NonZeroU32::new(size.width) else {
+            return;
+        };
+        let Some(h_nz) = NonZeroU32::new(size.height) else {
+            return;
+        };
         surface.resize(w_nz, h_nz).expect("resize");
 
         let mut buf = surface.buffer_mut().expect("buffer");
