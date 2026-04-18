@@ -1,5 +1,13 @@
 # damage-rects
 
+[![Crates.io](https://img.shields.io/crates/v/damage-rects?style=flat-square&logo=rust)](https://crates.io/crates/damage-rects)
+[![docs.rs](https://img.shields.io/docsrs/damage-rects?style=flat-square&logo=docs.rs)](https://docs.rs/damage-rects)
+[![License](https://img.shields.io/crates/l/damage-rects?style=flat-square)](LICENSE)
+[![MSRV](https://img.shields.io/badge/MSRV-1.94-blue?style=flat-square&logo=rust)](Cargo.toml)
+[![Downloads](https://img.shields.io/crates/d/damage-rects?style=flat-square)](https://crates.io/crates/damage-rects)
+
+**English** | [简体中文](README.zh-CN.md) | [日本語](README.ja.md)
+
 Accumulate dirty rectangles and emit a merged redraw region for partial
 GPU canvas updates. Zero dependencies, no GPU coupling, no viewport
 assumptions — pairs with any 2D renderer (Skia, wgpu, softbuffer, raw
