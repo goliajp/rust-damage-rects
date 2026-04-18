@@ -5,6 +5,10 @@ GPU canvas updates. Zero dependencies, no GPU coupling, no viewport
 assumptions — pairs with any 2D renderer (Skia, wgpu, softbuffer, raw
 Metal).
 
+> **Also known as / if you're searching for:** damage tracking, dirty
+> rectangle tracking, partial redraw, invalidation region, repaint
+> region, region coalescing, editor/terminal incremental redraw.
+
 ## Why
 
 Every interactive GPU-rendered app has a choice: redraw the whole frame
@@ -86,4 +90,4 @@ orientation is up to the caller — the library only uses arithmetic.
 
 ## License
 
-MIT — see [LICENSE](../../LICENSE) at the workspace root.
+MIT — see [LICENSE](LICENSE).
