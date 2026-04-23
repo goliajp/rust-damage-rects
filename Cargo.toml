@@ -1,6 +1,6 @@
 [package]
 name = "damage-rects"
-version = "0.1.1"
+version = "0.1.2"
 description = "Accumulate, coalesce, and emit dirty rectangles for partial GPU redraw"
 keywords = ["damage", "dirty", "rect", "redraw", "gpu"]
 categories = ["graphics", "gui", "rendering"]
