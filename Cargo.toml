@@ -1,15 +1,15 @@
 [package]
 name = "damage-rects"
-version = "0.1.0"
+version = "0.1.1"
 description = "Accumulate, coalesce, and emit dirty rectangles for partial GPU redraw"
 keywords = ["damage", "dirty", "rect", "redraw", "gpu"]
 categories = ["graphics", "gui", "rendering"]
-edition.workspace = true
-rust-version.workspace = true
-license.workspace = true
-repository.workspace = true
-homepage.workspace = true
-authors.workspace = true
+edition = "2024"
+rust-version = "1.94"
+license = "MIT"
+repository = "https://github.com/goliajp/rust-damage-rects"
+homepage = "https://github.com/goliajp/rust-damage-rects"
+authors = ["GOLIA株式会社", "Li Hao <lihao@golia.jp>"]
 readme = "README.md"
 documentation = "https://docs.rs/damage-rects"
 
@@ -21,3 +21,7 @@ softbuffer = "0.4"
 
 [[example]]
 name = "visualize"
+
+[profile.release]
+lto = true
+codegen-units = 1
