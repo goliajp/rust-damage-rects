@@ -100,13 +100,7 @@ orientation is up to the caller — the library only uses arithmetic.
 
 ## Ecosystem
 
-Part of GOLIA's Rust GUI/GPU infrastructure family — narrow crates extracted from real production incidents, each independently versioned:
-
-| Crate / Package | Repo | Description |
-|---|---|---|
-| [metal-live-resize](https://crates.io/crates/metal-live-resize) | [rust-metal-live-resize](https://github.com/goliajp/rust-metal-live-resize) | Glitch-free macOS Metal window live resize (CAMetalLayer contentsGravity + contentsScale) |
-| [coalesce-worker](https://crates.io/crates/coalesce-worker) | [rust-coalesce-worker](https://github.com/goliajp/rust-coalesce-worker) | Coalescing worker thread + generation-counter stale-result rejection |
-| **damage-rects** (this crate) | [rust-damage-rects](https://github.com/goliajp/rust-damage-rects) | Accumulate, coalesce, and emit dirty rectangles for partial GPU redraw |
+[metal-live-resize](https://crates.io/crates/metal-live-resize) · [coalesce-worker](https://crates.io/crates/coalesce-worker) · **damage-rects**
 
 <!-- ECOSYSTEM END -->
 
