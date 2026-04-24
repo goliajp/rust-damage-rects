@@ -82,13 +82,7 @@ damage-rects = "0.1"
 
 ## エコシステム
 
-GOLIA の Rust GUI/GPU インフラ系列の一員 — 実プロダクションのインシデントから抽出した narrow な crate、各々独立にバージョン管理:
-
-| Crate / Package | リポジトリ | 説明 |
-|---|---|---|
-| [metal-live-resize](https://crates.io/crates/metal-live-resize) | [rust-metal-live-resize](https://github.com/goliajp/rust-metal-live-resize) | macOS Metal ウィンドウのちらつきなしリサイズ（CAMetalLayer contentsGravity + contentsScale） |
-| [coalesce-worker](https://crates.io/crates/coalesce-worker) | [rust-coalesce-worker](https://github.com/goliajp/rust-coalesce-worker) | コアレッシング worker + 世代カウンタで古い結果を破棄 |
-| **damage-rects**（本 crate） | [rust-damage-rects](https://github.com/goliajp/rust-damage-rects) | ダーティ矩形の累積・合成・出力で部分 GPU 再描画を支援 |
+[metal-live-resize](https://crates.io/crates/metal-live-resize) · [coalesce-worker](https://crates.io/crates/coalesce-worker) · **damage-rects**
 
 <!-- ECOSYSTEM END -->
 
