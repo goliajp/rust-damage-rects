@@ -96,7 +96,7 @@ damage-rects = "0.1"
 (`contains_point` returns `false` on right/bottom edges). Coordinate
 orientation is up to the caller — the library only uses arithmetic.
 
-<!-- ECOSYSTEM BEGIN (synced by claws/opensource/scripts/sync-ecosystem.py — edit ecosystem.toml, not this block) -->
+<!-- ECOSYSTEM BEGIN (generated — edit ecosystem.toml, not this block) -->
 
 ## Ecosystem
 

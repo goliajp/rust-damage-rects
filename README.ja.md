@@ -78,7 +78,7 @@ damage-rects = "0.1"
 
 `DamageRect { x, y, width, height }`、`f32`。右/下は開区間（`contains_point` は右/下境界で `false` を返す）。座標の向きは呼び出し側に委ねられます——ライブラリは算術しか使いません。
 
-<!-- ECOSYSTEM BEGIN (synced by claws/opensource/scripts/sync-ecosystem.py — edit ecosystem.toml, not this block) -->
+<!-- ECOSYSTEM BEGIN (generated — edit ecosystem.toml, not this block) -->
 
 ## エコシステム
 
